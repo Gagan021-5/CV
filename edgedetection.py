@@ -8,7 +8,6 @@ image = cv2.imread(image_path)
 
 #edge det
 edgeimage = cv2.Canny(image,200,300)
-
 imageedgedil = cv2.dilate(edgeimage,np.ones((5,5),dtype=np.int8))
 imageerode = cv2.erode(imageedgedil,np.ones((3,3),dtype=np.int8))
 
